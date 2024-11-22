@@ -1,0 +1,39 @@
+# Byte-compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual Environment
+venv/
+
+# Environment variables and secrets
+.env
+
+# Logs and debugging files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker-specific files
+*.pid
+*.sock
+
+# Kubernetes configs and cache (if temporary files are present)
+k8s/.cache/
+
+# Python packaging files
+*.egg-info/
+dist/
+build/
+
+# Other editor or IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.bak
+*~
+
+# ArgoCD temporary files (if any)
+argocd/tmp/
