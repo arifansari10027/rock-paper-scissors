@@ -36,4 +36,4 @@ build/
 *~
 
 # ArgoCD temporary files (if any)
-argocd/tmp/
+argocd/tmp/venv/
