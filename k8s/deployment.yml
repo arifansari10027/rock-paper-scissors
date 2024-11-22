@@ -5,6 +5,11 @@ metadata:
   namespace: rock-paper-scissors
   labels:
     app: rock-paper-scissors
+  annotations:
+    argocd.argoproj.io/health-check: |
+      kind: Deployment
+      apiVersion: apps/v1
+      status: Healthy
 spec:
   replicas: 2
   selector:
@@ -20,3 +25,4 @@ spec:
         image: rock-paper-scissors:latest
         ports:
         - containerPort: 5000
+        

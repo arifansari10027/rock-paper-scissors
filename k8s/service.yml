@@ -3,6 +3,13 @@ kind: Service
 metadata:
   name: rock-paper-scissors
   namespace: rock-paper-scissors
+  labels:
+    app: rock-paper-scissors
+  annotations:
+    argocd.argoproj.io/health-check: |
+      kind: Service
+      apiVersion: v1
+      status: Healthy
 spec:
   selector:
     app: rock-paper-scissors
