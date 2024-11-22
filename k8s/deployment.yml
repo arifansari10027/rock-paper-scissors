@@ -2,8 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rock-paper-scissors
+  namespace: rock-paper-scissors
+  labels:
+    app: rock-paper-scissors
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: rock-paper-scissors
@@ -14,6 +17,6 @@ spec:
     spec:
       containers:
       - name: rock-paper-scissors
-        image: arifansari10027/rock-paper-scissors:latest
+        image: rock-paper-scissors:latest
         ports:
         - containerPort: 5000

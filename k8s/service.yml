@@ -2,13 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rock-paper-scissors
-  labels:
-    app: rock-paper-scissors
+  namespace: rock-paper-scissors
 spec:
   selector:
     app: rock-paper-scissors
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 5000
-  type: LoadBalancer
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
+  type: ClusterIP
