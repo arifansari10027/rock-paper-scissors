@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: rock-paper-scissors
-        image: rock-paper-scissors:latest
+        image: arifansari10027/rock-paper-scissors:latest
         ports:
         - containerPort: 5000
         
