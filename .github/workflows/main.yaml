@@ -26,7 +26,7 @@ jobs:
 
       - name: Run tests
         run: |
-          source venv/bin/activate
+          source venv/bin/activate  
           pytest
 
       - name: Build Docker image
@@ -41,4 +41,4 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push arifansari10027/arifansari10027:latest
+          docker push arifansari10027/rock-paper-scissors:latest
